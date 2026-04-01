@@ -145,14 +145,17 @@ body {
     align-items: center;
 }
 
-.nav-brand a {
+.nav-brand {
     display: flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
+    color: var(--text-dark);
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
-.logo-icon {
+.nav-brand i {
     width: 40px;
     height: 40px;
     background: var(--gradient);
@@ -162,12 +165,6 @@ body {
     justify-content: center;
     color: white;
     font-size: 1.3rem;
-}
-
-.logo-text {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--text-dark);
 }
 
 .nav-menu {
