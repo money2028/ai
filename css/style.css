@@ -555,6 +555,130 @@ section {
     margin-bottom: 20px;
 }
 
+/* Cases Section */
+.cases {
+    background: var(--bg-white);
+}
+
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.case-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.case-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.case-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border);
+}
+
+.case-header h3 {
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+.case-tag {
+    background: var(--accent);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.case-metric {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.metric-label {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.case-content p {
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+/* About Section */
+.about {
+    background: var(--bg-light);
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-text h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.about-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.value-item {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.value-item i {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.value-item h4 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
 /* Stats Section */
 .stats {
     background: var(--gradient);
